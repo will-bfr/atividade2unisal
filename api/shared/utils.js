@@ -10,16 +10,16 @@ const executeSQL = (context, verb, payload) => {
     context.log(payload);
 
     const connection = new Connection({
-        server: process.env["db_server"],
+        server: process.env["atividade2-bd-srv.database.windows.net"],
         authentication: {
             type: 'default',
             options: {
-                userName: process.env["db_user"],
-                password: process.env["db_password"],
+                userName: process.env["WilliamAdmin"],
+                password: process.env["130290@Tulio070"],
             }
         },
         options: {
-            database: process.env["db_database"],
+            database: process.env["Atividade2-BD"],
             encrypt: true
         }
     });
